@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My landing page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="overlay"></div>
+        <img src="zoom_wallpaper_mancity_05.png" alt="">
+        <div class="navigation">
+            <div class="logo">
+                MANCHESTER CITY FC
+            </div>
+            <ul>
+                <a href=""><li>Home</li></a>
+                <a href="https://shop.mancity.com/"><li>Our shop</li></a>
+                <a href="https://hlee4real.github.io/achievement/"><li>Our achievements</li></a>
+                <a href="https://hlee4real.github.io/players/"><li>Our players</li></a>
+            </ul>
+        </div>
+        <div class="header">
+            <h1 class="head">
+                Welcome to <span style="color:aqua;">MANCHESTER CITY FC</span>
+                <div class="button">
+                    <a href="https://www.facebook.com/mancity" class="btn1">Our facebook</a>
+                    <a href="https://www.instagram.com/mancity/" class="btn2">Our instagram</a>
+                </div>
+            </h1>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    *{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+    color:white;
+}
+img{
+    position:absolute;
+    z-index:-1;
+    min-height:100%;
+    min-width:100%;
+    width:100%;
+    height:100%;
+    left: 0;
+    right:0;
+    top:0;
+    bottom: 0;
+    object-fit: cover; 
+}
+.container{
+    position:relative;
+    height:100vh;
+    width: 100%;
+    top:0;
+    left:0;
+    right:0;
+}
+.navigation{
+    position:absolute;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    display:flex;
+    background-color:#6CABDD;
+}
+.logo{
+    position: relative;
+    height: auto;
+    width: 20%;
+    left:10%;
+    color:white;
+    font-size:28px;
+    float:left;
+    text-shadow: 0px 0.5px 5px rgba(0,0,0,0.8);
+    transition: 0.6s ease-in-out;
+    cursor:pointer;
+}
+.navigation ul{
+    position:relative;
+    float: right;
+    width: 50%;
+    right: -28%;
+    margin:auto;
+    height: auto;
+}
+.navigation ul li{
+    list-style-type: none;
+    display: inline-block;
+    height:100%;
+    width: auto;
+    border: 1px solid rgba(255,255,255,0.88);
+    border-radius:3.5px;
+    cursor:pointer;
+    padding:8px;
+    box-shadow:0px 1px 5px rgba(0,0,0,0.7);
+    transition: 0.5s ease-in-out;
+    box-sizing: border-box;
+    font-size:18px;
+    color:#6CABDD;
+    background-color:white;
+}
+.navigation ul li:hover{
+    background-color: aqua;
+    color:brown;
+}
+.header{
+    position: absolute;
+    padding-bottom: 600px;
+    margin-left:-450px;
+    text-align:center;
+    height:auto;
+    width:100%;
+    top:50%;
+    transform:translateY(-50%);
+    text-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+}
+.header .head{
+    font-size:50px;
+}
+.button a{
+    border:1px solid rgba(255,255,255,0.4);
+    padding:10px;
+    font-size: 15px;
+    font-weight:300;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.5s ease-in-out;
+}
+.btn1{
+    background-color: rgba(66,103,178,0.5);
+}
+.btn2{
+    background-color: rgba(131,58,180,0.5);
+}
+.button a:hover{
+    background: rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.4);
+}
+.overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+</style>
